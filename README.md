@@ -7,3 +7,4 @@ Some of the algorithms used are:
 - ### KNN
 - ### SVC
 - ### Decision Trees
+- ### Random Forest Classifier
