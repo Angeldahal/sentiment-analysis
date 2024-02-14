@@ -42,9 +42,9 @@ def train(self,
     
 def evaluate(self, 
              dataloader: torch.utils.data.DataLoader, 
-             model: torch, 
-             loss_fn, 
-             device
+             model: torch.nn.Module, 
+             loss_fn: torch.nn.Module, 
+             device: str = 'cpu'
 ):
     model.eval()
     epoch_losses = []
