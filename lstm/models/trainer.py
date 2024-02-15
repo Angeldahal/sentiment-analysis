@@ -1,8 +1,8 @@
 import collections
 from models.train import train, evaluate
 import torch
-from preprocess import train_data_loader, valid_data_loader
-from engine import LSTMModel
+# from preprocess import train_data_loader, valid_data_loader
+from models.engine import LSTMModel
 from utils.default_arguments import args
 
 device = "cuda" if torch.cuda.is_available() else "cpu"

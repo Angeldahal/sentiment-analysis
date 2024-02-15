@@ -2,3 +2,4 @@ __pycache__/
 assets/
 /*.h5
 model/
+/__pycache__/
