@@ -40,7 +40,10 @@ class PredictView(MethodView):
         text = self._get_text(request)
 
         try:
-            sentiment, probability = predict(text)
+            probability, sentiment = predict(text)
+
+            probability = f"{probability:.2f}"
+            sentiment = "Positive" if sentiment == 1 else "Negative"
         except:
             print('Error in predicting')
             return jsonify({'success': False}), 500
